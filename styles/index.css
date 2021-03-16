@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 100px;
+}
+.container .img img{
+    animation: zoomin;
+    animation-duration: 2s;
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.btns{
+    padding: 100px 200px 0 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.btns a{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btns a:hover{
+    background-color: white;
+    color: black;
+}
